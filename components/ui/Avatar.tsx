@@ -30,7 +30,7 @@ export function Avatar({
   return (
     <div
       className={cn(
-        "relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full text-xs font-bold",
+        "relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-full text-xs font-bold",
         !image ? tone : "",
         className
       )}
