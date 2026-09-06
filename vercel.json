@@ -1,0 +1,4 @@
+{
+  "buildCommand": "bash start.sh",
+  "installCommand": "npm install"
+}
