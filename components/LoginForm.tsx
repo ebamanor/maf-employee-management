@@ -66,10 +66,6 @@ export default function LoginForm() {
             {isPending ? "Logging in..." : "Login"}
           </Button>
         </form>
-
-        <p className="mt-6 text-center text-xs text-[var(--muted-foreground)]">
-          First admin login uses the credentials configured in the environment.
-        </p>
       </div>
     </div>
   );
