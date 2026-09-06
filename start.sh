@@ -13,5 +13,8 @@ MIGRATE_URL="${DATABASE_URL_UNPOOLED:-$DATABASE_URL}"
 # --accept-data-loss is needed in CI/non-interactive environments.
 DATABASE_URL="$MIGRATE_URL" npx prisma db push --accept-data-loss
 
+# Seed default websites and categories (idempotent upserts).
+DATABASE_URL="$MIGRATE_URL" npx tsx prisma/seed.ts
+
 # Build the Next.js app.
 npx next build
