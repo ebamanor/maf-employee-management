@@ -11,7 +11,7 @@ MIGRATE_URL="${DATABASE_URL_UNPOOLED:-$DATABASE_URL}"
 
 # Push the Prisma schema to the Postgres database.
 # --accept-data-loss is needed in CI/non-interactive environments.
-DATABASE_URL="$MIGRATE_URL" npx prisma db push --accept-data-loss --skip-generate
+DATABASE_URL="$MIGRATE_URL" npx prisma db push --accept-data-loss
 
 # Build the Next.js app.
 npx next build
